@@ -110,6 +110,8 @@ namespace TilesetMaker
                 if (generateXML.Checked)
                 {
                     xmlNode = new XElement("AtlasData");
+
+                    xmlNode.Add("Size", axis);
                 }
 
                 for (int x = 0; x < files; x++)
